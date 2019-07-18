@@ -1,17 +1,17 @@
 export const CIPHERS = [
   {
-    beforeCipher: 'I love node!',
-    afterCipher: 'E hkra jkza!',
+    toShift: 'I love node!',
+    afterShift: 'E hkra jkza!',
     shiftAmount: 22,
   },
   {
-    beforeCipher: 'I love JavaScript!',
-    afterCipher: 'X adkt YpkpHrgxei!',
+    toShift: 'I love JavaScript!',
+    afterShift: 'X adkt YpkpHrgxei!',
     shiftAmount: 15,
   },
   {
-    beforeCipher: 'Node.js is awesome!',
-    afterCipher: 'Uvkl.qz pz hdlzvtl!',
+    toShift: 'Node.js is awesome!',
+    afterShift: 'Uvkl.qz pz hdlzvtl!',
     shiftAmount: 7,
   },
 ];

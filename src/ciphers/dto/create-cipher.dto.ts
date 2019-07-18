@@ -1,5 +1,5 @@
 export class CreateCipherDTO {
-  readonly beforeCipher: string;
-  readonly afterCipher: string;
+  readonly toShift: string;
+  readonly afterShift: string;
   readonly shiftAmount: number;
 }
