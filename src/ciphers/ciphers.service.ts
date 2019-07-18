@@ -1,10 +1,9 @@
 import { Injectable, HttpException } from '@nestjs/common';
-import { CIPHERS } from '../mocks/ciphers.mock';
 import { caesarShift } from '../functions/caesarShift';
 
 @Injectable()
 export class CiphersService {
-  ciphers = CIPHERS;
+  ciphers = [];
 
   getCiphers(): Promise<any> {
     return new Promise(resolve => {
