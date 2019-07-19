@@ -25,6 +25,10 @@ export class CiphersService {
         );
       }
 
+      if (cipher.toShift.length === 0) {
+        throw new HttpException("toShift can't be an empty string", 422);
+      }
+
       if (!aNumber) {
         throw new HttpException('Shift amount is not a number', 422);
       }

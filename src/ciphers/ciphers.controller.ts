@@ -1,20 +1,20 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
-import { CiphersService } from './ciphers.service'
-import { CreateCipherDTO } from './dto/create-cipher.dto'
+import { CiphersService } from './ciphers.service';
+import { CreateCipherDTO } from './dto/create-cipher.dto';
 
 @Controller('ciphers')
 export class CiphersController {
-  constructor(private ciphersService: CiphersService) { }
+  constructor(private ciphersService: CiphersService) {}
 
-    @Get()
-    async getCiphers() {
-        const books = await this.ciphersService.getCiphers();
-        return books;
-    }
+  @Get()
+  async getCiphers() {
+    const ciphers = await this.ciphersService.getCiphers();
+    return ciphers;
+  }
 
-    @Post()
-    async addCipher(@Body() createCipherDTO: CreateCipherDTO) {
-        const book = await this.ciphersService.addCipher(createCipherDTO);
-        return book;
-    }
+  @Post()
+  async addCipher(@Body() createCipherDTO: CreateCipherDTO) {
+    const cipher = await this.ciphersService.addCipher(createCipherDTO);
+    return cipher;
+  }
 }
