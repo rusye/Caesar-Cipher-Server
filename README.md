@@ -18,6 +18,17 @@ $ git clone https://github.com/rusye/Caesar-Cipher-Server.git
 $ npm run start
 ```
 
+## GET and POST endpoint
+```bash
+http://localhost:3000/ciphers
+```
+
+## Field's required in POST body
+```base
+toShift: "string"
+shiftAmount: number
+```
+
 ## Test
 
 ```bash
